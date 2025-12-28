@@ -84,16 +84,19 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-001**: System MUST support adding new todo items with a title and optional description
+- **FR-002**: System MUST allow deleting existing todo items by ID
+- **FR-003**: System MUST enable updating todo item details (title, description, completion status)
+- **FR-004**: System MUST display all todo items with their current status
+- **FR-005**: System MUST allow toggling the completion status of todo items
+- **FR-006**: System MUST provide a CLI interface for all operations
+- **FR-007**: System MUST handle errors gracefully with user-friendly messages
 
 *Example of marking unclear requirements:*
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+- **FR-008**: System MUST follow type safety requirements [CONSTITUTION: all code must use type hints per PEP 484]
+- **FR-009**: System MUST follow documentation-first approach [CONSTITUTION: comprehensive docstrings per PEP 257]
+- **FR-010**: System MUST store data in-memory only [CONSTITUTION: no external databases]
 
 ### Key Entities *(include if feature involves data)*
 

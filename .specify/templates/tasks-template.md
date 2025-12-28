@@ -62,11 +62,11 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
+- [ ] T004 Setup in-memory data storage structure (no external database)
+- [ ] T005 [P] Implement type checking configuration (mypy or similar)
+- [ ] T006 [P] Setup code formatting and linting tools (PEP 8 compliance)
+- [ ] T007 Create base models/entities that all stories depend on with type hints and docstrings
+- [ ] T008 Configure error handling and logging infrastructure with user-friendly messages
 - [ ] T009 Setup environment configuration management
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
@@ -88,11 +88,11 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
+- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py with type hints and docstrings
+- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py with type hints and docstrings
+- [ ] T014 [US1] Implement [Service] in src/services/[service].py with type hints and docstrings (depends on T012, T013)
+- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py with type hints and docstrings
+- [ ] T016 [US1] Add validation and error handling with user-friendly messages
 - [ ] T017 [US1] Add logging for user story 1 operations
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
@@ -112,10 +112,10 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py
-- [ ] T021 [US2] Implement [Service] in src/services/[service].py
-- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T023 [US2] Integrate with User Story 1 components (if needed)
+- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py with type hints and docstrings
+- [ ] T021 [US2] Implement [Service] in src/services/[service].py with type hints and docstrings
+- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py with type hints and docstrings
+- [ ] T023 [US2] Integrate with User Story 1 components (if needed) while maintaining clean architecture
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -134,9 +134,9 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
-- [ ] T027 [US3] Implement [Service] in src/services/[service].py
-- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
+- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py with type hints and docstrings
+- [ ] T027 [US3] Implement [Service] in src/services/[service].py with type hints and docstrings
+- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py with type hints and docstrings
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -150,12 +150,15 @@ Examples of foundational tasks (adjust based on your project):
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
+- [ ] TXXX [P] Documentation updates in docs/ with comprehensive API documentation
+- [ ] TXXX Code cleanup and refactoring to ensure all functions ≤30 lines
 - [ ] TXXX Performance optimization across all stories
-- [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
+- [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/ to achieve 80%+ coverage
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
+- [ ] TXXX Verify all code follows PEP 8 style guidelines
+- [ ] TXXX Run static type checking to ensure all type hints are correct
+- [ ] TXXX Validate all functions have proper docstrings following PEP 257
 
 ---
 

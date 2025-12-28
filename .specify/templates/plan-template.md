@@ -31,7 +31,17 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- All code must follow PEP 8 style guidelines
+- Type hints required for all functions and variables (PEP 484)
+- Static type checking must pass with mypy or similar tool
+- All functions must be ≤30 lines of code
+- Clean architecture with clear separation of concerns maintained
+- Only the 5 core Todo features: Add, Delete, Update, View, Toggle Complete
+- Documentation-first approach with comprehensive docstrings (PEP 257)
+- In-memory storage only - no external databases
+- Python 3.13+ with UV package manager required
+- Graceful error handling with user-friendly messages
+- Unit tests must cover all business logic with minimum 80% coverage
 
 ## Project Structure
 
