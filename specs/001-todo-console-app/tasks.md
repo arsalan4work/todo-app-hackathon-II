@@ -24,13 +24,13 @@ Implementation of a Python console-based Todo application with in-memory storage
 
 ### Phase 1: Core Models and Data Structures
 
-- [ ] **TASK-001**: Create Task model with type hints and validation
+- [X] **TASK-001**: Create Task model with type hints and validation
   - Implement dataclass with id, title, description, completed fields
   - Add validation for title length (1-100 chars) and description (0-500 chars)
   - Include completion status and creation timestamp
-  - Add status symbol property (✓/○) for display
+  - Add status symbol property (X/O) for display
 
-- [ ] **TASK-002**: Create in-memory task storage
+- [X] **TASK-002**: Create in-memory task storage
   - Implement a repository pattern with dictionary-based storage
   - Support operations: add, get by ID, get all, update, delete
   - Ensure thread-safe operations if needed
@@ -38,7 +38,7 @@ Implementation of a Python console-based Todo application with in-memory storage
 
 ### Phase 2: Business Logic Layer
 
-- [ ] **TASK-003**: Implement TaskService class
+- [X] **TASK-003**: Implement TaskService class
   - Add method: create_task(title, description) -> Task
   - Add method: get_task(task_id) -> Task | None
   - Add method: get_all_tasks() -> List[Task]
@@ -46,56 +46,56 @@ Implementation of a Python console-based Todo application with in-memory storage
   - Add method: delete_task(task_id) -> bool
   - Add method: toggle_task_status(task_id) -> Task | None
 
-- [ ] **TASK-004**: Implement input validation
+- [X] **TASK-004**: Implement input validation
   - Create validation functions for title and description
   - Validate character limits and required fields
   - Return appropriate error messages for invalid inputs
 
-- [ ] **TASK-005**: Implement error handling
+- [X] **TASK-005**: Implement error handling
   - Create custom exception classes for different error types
   - Handle invalid task IDs gracefully
   - Provide user-friendly error messages
 
 ### Phase 3: CLI Interface
 
-- [ ] **TASK-006**: Create CLI controller
+- [X] **TASK-006**: Create CLI controller
   - Implement main menu with numbered options
   - Handle user input and command routing
   - Format and display task information
 
-- [ ] **TASK-007**: Implement "Add Task" functionality
+- [X] **TASK-007**: Implement "Add Task" functionality
   - Prompt for title (required) and description (optional)
   - Validate inputs before creating task
   - Display success message with task details
 
-- [ ] **TASK-008**: Implement "View All Tasks" functionality
+- [X] **TASK-008**: Implement "View All Tasks" functionality
   - Display formatted list of all tasks
-  - Show ID, title, status (✓/○), and description preview
+  - Show ID, title, status (X/O), and description preview
   - Handle case when no tasks exist
 
-- [ ] **TASK-009**: Implement "Update Task" functionality
+- [X] **TASK-009**: Implement "Update Task" functionality
   - Prompt for task ID and new title/description
   - Validate inputs before updating
   - Display success/error messages
 
-- [ ] **TASK-010**: Implement "Delete Task" functionality
+- [X] **TASK-010**: Implement "Delete Task" functionality
   - Prompt for task ID with confirmation
   - Validate task exists before deletion
   - Display appropriate feedback
 
-- [ ] **TASK-011**: Implement "Toggle Task Status" functionality
+- [X] **TASK-011**: Implement "Toggle Task Status" functionality
   - Prompt for task ID
   - Toggle completion status and update task
   - Display confirmation of status change
 
 ### Phase 4: Application Integration
 
-- [ ] **TASK-012**: Create main application entry point
+- [X] **TASK-012**: Create main application entry point
   - Initialize task service and CLI controller
   - Implement main loop for menu navigation
   - Handle graceful exit
 
-- [ ] **TASK-013**: Implement application configuration
+- [X] **TASK-013**: Implement application configuration
   - Set up UV package manager configuration
   - Define dependencies in pyproject.toml
   - Configure type checking settings
@@ -145,12 +145,12 @@ Implementation of a Python console-based Todo application with in-memory storage
 
 ## Success Criteria
 
-- [ ] All 5 core features (Add, View, Update, Delete, Toggle) functional
-- [ ] Input validation working correctly
-- [ ] Error handling in place with user-friendly messages
-- [ ] Clean architecture with separation of concerns
-- [ ] Type safety maintained throughout
-- [ ] PEP 8 compliance
+- [X] All 5 core features (Add, View, Update, Delete, Toggle) functional
+- [X] Input validation working correctly
+- [X] Error handling in place with user-friendly messages
+- [X] Clean architecture with separation of concerns
+- [X] Type safety maintained throughout
+- [X] PEP 8 compliance
 - [ ] Tests covering all business logic with 80%+ coverage
-- [ ] In-memory storage working correctly
-- [ ] Menu-based navigation intuitive and responsive
+- [X] In-memory storage working correctly
+- [X] Menu-based navigation intuitive and responsive
